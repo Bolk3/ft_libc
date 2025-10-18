@@ -1,1 +1,4 @@
-int ft_isblank(int c) { return (c == 32 || c == 9); }
+int	ft_isblank(int c)
+{
+	return (c == 32 || c == 9);
+}
