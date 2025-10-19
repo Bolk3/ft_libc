@@ -1,1 +1,6 @@
-int ft_isspace(int c) { return (c == 32 || (c >= 9 && c <= 13)) }
+#include "libft.h"
+
+int	ft_isspace(int character)
+{
+	return ((character >= 9 && character <= 13) || character == 32);
+}

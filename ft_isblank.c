@@ -1,4 +1,6 @@
-int	ft_isblank(int c)
+#include "libft.h"
+
+int	ft_isblank(int character)
 {
-	return (c == 32 || c == 9);
+	return (character == 9 || character == 32);
 }

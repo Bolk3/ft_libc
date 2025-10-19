@@ -2,15 +2,12 @@
 
 void	*ft_memset(void *pointer, int value, size_t count)
 {
-	int		*result;
-	size_t	i;
+	unsigned char	*p;
 
-	i = 0;
-	result = pointer;
-	while (i < count)
+	p = pointer;
+	while(count--)
 	{
-		*(result+ i) = value;
-		i++;
+		*p++ = (unsigned char)value;
 	}
-	return ((void *)result);
+	return (void *)(p);
 }

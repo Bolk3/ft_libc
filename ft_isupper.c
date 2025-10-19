@@ -1,3 +1,4 @@
-#include "libft.h"
-
-int ft_isupper(int c) { return (c >= 'A' && c <= 'Z'); }
+int	ft_isupper(int character)
+{
+	return (character >= 65 && character <= 90);
+}

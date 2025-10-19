@@ -1,3 +1,6 @@
 #include "libft.h"
 
-int ft_ispunct(int c) { return (ft_isgraph(c) && !ft_isalpha(c)); }
+int	ft_ispunct(int character)
+{
+	return (!ft_isalnum(character) && (character >= 33 && character <= 126));
+}

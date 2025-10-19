@@ -1,16 +1,20 @@
 #include "libft.h"
 
-void ft_putnbr(int n) {
-  long number;
+void	ft_putnbr(int n)
+{
+	long	nbr;
 
-  number = n;
-  if (number < 0) {
-    ft_putchar('-');
-    number *= -1;
-  }
-  if (number <= 9) {
-    ft_putchar('0' + number);
-  }
-  ft_putnbr(number / 10);
-  ft_putnbr(number % 10);
+	nbr = n;
+	if (nbr < 0)
+	{
+		nbr *= -1;
+		ft_putchar('-');
+	}
+	if (nbr <= 9)
+		ft_putchar('0' + nbr);
+	else
+	{
+		ft_putnbr(nbr / 10);
+		ft_putnbr(nbr % 10);
+	}
 }

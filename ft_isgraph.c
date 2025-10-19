@@ -1,1 +1,6 @@
-int ft_isgraph(int c) { return (c > 32); }
+#include "libft.h"
+
+int	ft_isgraph(int character)
+{
+	return (character >= 33 && character <= 126);
+}

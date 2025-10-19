@@ -1,18 +1,15 @@
 #include "libft.h"
 
-void	*ft_memccpy(void *destination, void const *source, int ch, size_t maxSize)
+void	*ft_memccpy(void *dest, const void *src, int ch, size_t size)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	d = destination;
-	s = source;
-	while (maxSize--)
+	d = dest;
+	s = src;
+	while (size-- && *s != ch)
 	{
-		if (*s == ch) {
-			return (destination);
-		}
 		*d++ = *s++;
 	}
-	return (destination);
+	return (void *)(d);
 }
