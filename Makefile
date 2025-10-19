@@ -16,6 +16,7 @@ SRC = ft_isalpha.c \
 	  ft_isblank.c \
 	  ft_iscntrl.c \
 	  ft_isxdigit.c \
+	  ft_isascii.c \
 	  ft_ispunct.c \
 	  ft_isgraph.c \
 	  ft_isprint.c \
